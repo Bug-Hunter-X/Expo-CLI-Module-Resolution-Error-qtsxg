@@ -1,0 +1,5 @@
+This error typically occurs when using the Expo CLI and you encounter an issue where a specific module or package is not found or cannot be resolved correctly.  This can manifest in different ways, depending on the specific module and the underlying cause.  Often it is related to incorrect configurations within your project's `package.json`,  `metro.config.js` or issues with your project's dependency tree.  One common example is:
+```bash
+Error: Unable to resolve module `react-native-reanimated` from `node_modules/react-native-gesture-handler/index.js`
+```
+This indicates that the `react-native-reanimated` dependency, required by `react-native-gesture-handler`, is not being properly linked or found within your project's dependency resolution chain. Another case could be when Expo tries to start your app but one of the required packages is missing or its configuration in the `package.json` is broken. 
